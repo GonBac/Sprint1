@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sprint 1</title>
+    <link rel="stylesheet" href="style.css">
+ 
+</head>
+<body>
+    
+    <div class="cards">
+        <div class="front">
+            <img src="imágenes/bg-card-front.png" alt="Cardfront">
+            <svg class="logo" width="84" height="47" fill="none" xmlns="http://www.w3.org/2000/svg"><ellipse cx="23.478" cy="23.5" rx="23.478" ry="23.5" fill="#fff"/><path d="M83.5 23.5c0 5.565-4.507 10.075-10.065 10.075-5.559 0-10.065-4.51-10.065-10.075 0-5.565 4.506-10.075 10.065-10.075 5.558 0 10.065 4.51 10.065 10.075Z" stroke="#fff"/></svg>
+            <span class="number">0000 0000 0000 0000</span>
+            <span class="name">Gonza Bacigaupe</span>
+            <span class="date">07/02</span>
+        </div>
+
+        <div class="back">
+            <img src="imágenes/bg-card-back.png" alt="CardBack">
+            <span class="backcvc">000</span>
+        </div>
+    </div>
+    
+        <form class="textos">
+            
+                <label for="cardname">CARDHOLDER NAME:</label>
+                <input type="text" id="cardname" name="cardname" placeholder="Full Name" required>
+
+                <label for="cardnum">CARD MUMBER:</label>
+                <input type="number" id="cardnum" name="card-number" placeholder="Card Number" required>        
+            
+            <div class="datestext">
+                <label for="expidate">EXPIRATION DATE:</label>
+                <label for="cvc">CVC:</label>
+            </div>
+
+            <div class="dates">
+                <input type="number" id="expimonth" name="expimonth" placeholder="MM"required> 
+                <input type="number" id="expiyear" name="expiyear" placeholder="YYYY" required>    
+                
+                <div class="cvc">
+                    <input type="text"  id="cvc" name="cvc" required placeholder="123" minlength="3" maxlength="3" pattern="[0-9]{3}">  
+                </div>     
+            </div>
+                <button>Confirmar</button>
+            
+        </form>
+</body>
+</html>

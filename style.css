@@ -1,0 +1,201 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap");
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    background-image: url(./imágenes/bg-main-desktop.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;  
+    
+}
+.cards{
+    height: 55%;
+    width: 30%;
+    display:flex;
+    flex-direction: column;
+    /* border: 2px solid; */
+    position: relative;
+    left: -93px;
+}
+.front {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.logo{
+    position: absolute;
+    top: 40px;
+    left: 50px;
+}
+.number{
+    position: absolute;
+    top: 150px;
+    left: 50px;
+    color: white;
+    font-size: 30px;
+    
+}
+.name{
+    position: absolute;
+    top: 200px;
+    left: 50px;
+    color: white;
+}
+.date{
+    position: absolute;
+    top: 200px;
+    right: 50px;
+    color: white;
+
+}
+.back {
+    position: absolute;
+    bottom: 0;
+    right: 50px;
+}
+.backcvc{
+    position: absolute;
+    bottom: 119px;
+    right: 60px;
+    color: white;
+}
+.textos{
+    width: 20%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    gap:3px;
+}
+.textos input{
+    border-radius: 5px;
+}
+.datestext{
+    display: flex;
+    flex-direction: row;
+    width: 61%;
+    justify-content: space-between;
+    
+}
+.dates{
+    display: flex;
+    height: 10%;
+    width: 100%;
+    gap: 10px;
+}
+.dates input{
+    width: 25%
+}
+.cvc{
+    display: flex;
+    justify-content: center;
+    
+}
+.cvc input{
+    width: 100%;
+    margin-left: 20px;
+}
+button{
+    background-color: rgb(55, 15, 92);
+    color: white;
+    border: 3px solid;
+    border-radius: 15px;
+    margin-top: 50px;
+    min-height: 60px;
+    width: 100%;
+}
+input{
+    min-height: 40px;
+    margin-bottom: 15px;
+    padding-left: 10px;
+}
+
+@media (max-width: 375px) {
+    body{
+        width: 375px;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        /* justify-content:flex-start; */
+        align-items: center;
+        background-image: url(./imágenes/bg-main-mobile.png);
+        font-size: 12px;
+    }
+    .cards{
+        width: 90%;
+        height: 20%;
+        left:0px;
+        
+  }
+    .cards img{
+        width: 100%;
+    }
+    .front{
+        position: relative;
+        left: 0px;
+        top: 130px;
+        z-index: 0;
+        width: 80%;
+    }
+    .logo{
+        position: absolute;
+        top: 16px;
+        left: 13px;
+    }
+    
+    .back{
+        position: relative;
+        left: 54px;
+        top: -105px;
+        z-index: -1;
+        width: 80%;
+    }
+   
+    .number{
+        position: absolute;
+        top: 75px;
+        left: 20px;
+        color: white;
+        font-size: 20px;
+    }
+    .name{
+        position: absolute;
+        top: 115px;
+        left: 20px;
+        color: white;
+        font-size: 12px;
+    }
+    .date{
+        position: absolute;
+        top: 115px;
+        right: 30px;
+        font-size: 12px;
+        color: white;
+    }
+    .backcvc{
+        position: absolute;
+        bottom: 74px;
+        right: 35px;
+        color: white;
+        font-size: 10px;
+    }
+    .textos{
+        margin-top: 155px;
+        width: 90%;
+        height: 70%;
+        
+    }
+    .datestext{
+        width:62%;
+    }
+}
